@@ -23,7 +23,23 @@ namespace FaturaProgram
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //insert into musteri (ad,vno,adres,tel) values (text1.text
+            string sorgu = "insert into musteri(ad,vno,adres,tel) values (@ad,@vno,@adres,@tel)";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sorgu, conn);
+                cmd.Parameters.AddWithValue("@ad", textBox1.Text);
+                cmd.Parameters.AddWithValue("@vno", textBox2.Text);
+                cmd.Parameters.AddWithValue("@adres",textBox3.Text);
+                cmd.Parameters.AddWithValue("@tel", textBox4.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kayıt Eklenmiştir");
+            }
+            catch (Exception ex)
+            {
 
+                throw;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
