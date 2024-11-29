@@ -13,7 +13,7 @@ namespace FaturaProgram
 {
     public partial class Form1 : Form
     {
-        SqlConnection conn=new SqlConnection("Data Source=PC105E\\SQLEXPRESS;Initial Catalog=fatura;Integrated Security=True;TrustServerCertificate=True");
+        SqlConnection conn=new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=fatura;Integrated Security=True;TrustServerCertificate=True");
 
         //veribağlanmak için kullanılan bağlantı
         public Form1()
@@ -166,6 +166,11 @@ namespace FaturaProgram
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

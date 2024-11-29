@@ -43,11 +43,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtId = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -187,36 +187,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arama Penceresi";
             // 
-            // textBox5
+            // radioButton4
             // 
-            this.textBox5.Location = new System.Drawing.Point(18, 25);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(151, 20);
-            this.textBox5.TabIndex = 0;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 52);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Adına Göre";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(18, 71);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(134, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Vergi Numarasına Göre";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(18, 118);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(146, 17);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Telefon Numarasına Göre";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.Click += new System.EventHandler(this.radioButton4_Click);
             // 
             // radioButton3
             // 
@@ -230,17 +211,37 @@
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.Click += new System.EventHandler(this.radioButton3_Click);
             // 
-            // radioButton4
+            // radioButton2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(18, 118);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(146, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Telefon Numarasına Göre";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.Click += new System.EventHandler(this.radioButton4_Click);
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(18, 71);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(134, 17);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Vergi Numarasına Göre";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(18, 52);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(78, 17);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Adına Göre";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(18, 25);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(151, 20);
+            this.textBox5.TabIndex = 0;
             // 
             // Form1
             // 
