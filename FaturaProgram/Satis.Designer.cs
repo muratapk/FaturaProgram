@@ -45,6 +45,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.musteriID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.urunId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aciklama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siparisId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -135,6 +141,13 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.musteriID,
+            this.urunId,
+            this.adet,
+            this.tarih,
+            this.aciklama,
+            this.siparisId});
             this.dataGridView1.Location = new System.Drawing.Point(12, 182);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 349);
@@ -200,6 +213,42 @@
             this.textBox3.Visible = false;
             this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
             // 
+            // musteriID
+            // 
+            this.musteriID.DataPropertyName = "musteriId";
+            this.musteriID.HeaderText = "Müşteri Adı";
+            this.musteriID.Name = "musteriID";
+            // 
+            // urunId
+            // 
+            this.urunId.DataPropertyName = "urunId";
+            this.urunId.HeaderText = "Ürün Adı";
+            this.urunId.Name = "urunId";
+            // 
+            // adet
+            // 
+            this.adet.DataPropertyName = "adet";
+            this.adet.HeaderText = "Adet";
+            this.adet.Name = "adet";
+            // 
+            // tarih
+            // 
+            this.tarih.DataPropertyName = "tarih";
+            this.tarih.HeaderText = "Tarihi";
+            this.tarih.Name = "tarih";
+            // 
+            // aciklama
+            // 
+            this.aciklama.DataPropertyName = "aciklama";
+            this.aciklama.HeaderText = "Açıklama";
+            this.aciklama.Name = "aciklama";
+            // 
+            // siparisId
+            // 
+            this.siparisId.DataPropertyName = "siparisId";
+            this.siparisId.HeaderText = "Sipariş Numarası";
+            this.siparisId.Name = "siparisId";
+            // 
             // Satis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,5 +300,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musteriID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn urunId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tarih;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aciklama;
+        private System.Windows.Forms.DataGridViewTextBoxColumn siparisId;
     }
 }
